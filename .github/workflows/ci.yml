@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - name: Checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -27,4 +27,4 @@ jobs:
         run: python app.py
 
       - name: Run tests
-        run: python test_app.py
+        run: python test_app.py 
