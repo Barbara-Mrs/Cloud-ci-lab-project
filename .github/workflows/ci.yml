@@ -18,7 +18,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run app
-        run: python ap.py
+        run: python app.py
 
       - name: Run tests
         run: python test_app.py
