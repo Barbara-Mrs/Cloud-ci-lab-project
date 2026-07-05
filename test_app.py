@@ -1,7 +1,7 @@
 import subprocess
 
 def test_app_runs():
-    result = subprocess.run(["py", "app.py"], capture_output=True, text=True)
+    result = subprocess.run(["python", "app.py"], capture_output=True, text=True)
     assert result.returncode == 0
     assert "Cloud CI Pipeline Running" in result.stdout
 
