@@ -9,13 +9,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+     - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+
+      - name: Echo build message
+        run: echo "Starting build for cloud-ci-lab-project"
+
+      - name: Print Python version
+        run: python --version
 
       - name: Run app
         run: python app.py
